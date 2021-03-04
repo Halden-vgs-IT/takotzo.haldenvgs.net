@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teller</title>
+    <script>
+
+        window.onload = oppstart;
+
+        function oppstart() {
+            document.getElementById("txtMelding").onkeydown = tellTegn;
+        }
+
+        function tellTegn() {
+            document.getElementById("antTegn").innerHTML = 140 - document.getElementById("txtMelding").value.length;
+        }
+
+
+    </script>
+</head>
+<body>
+<input type="text" id="txtMelding" maxlength="140" >
+<p>Antall tegn igjen: <span id="antTegn">140</span></p>
+
+</body>
+</html>

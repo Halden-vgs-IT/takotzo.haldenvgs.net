@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Språk</title>
+    <script>
+
+        window.onload = oppstart;
+
+        function oppstart() {
+            document.getElementById("1stLand").onchange = visSpraak
+        }
+
+        function visSpraak() {
+            document.getElementById("melding").innerHTML = "da snakker du mest sannsynlig" + document.getElementById("1stLand").value;
+        }
+    </script>
+</head>
+<body>
+    <p>Hvilket land er du fra?</p>
+    <select id="1stLand">
+        <option value="Norsk">Norge</option>
+        <option value="Svensk">Sverige</option>
+        <option value="Dansk">Danmark</option>
+        <option value="Finsk">Finland</option>
+    </select>
+    <p id="melding"></p>
+</body>
+</html>

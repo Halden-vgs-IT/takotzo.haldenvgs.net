@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="box" class="box">
+        <h1 class="text">Element</h1>
+        <h2 class="text">(h1)</h2>
+        <div id="box2" class="box box2">
+            <h1 class="text">Element</h1>
+            <h2 class="text">(Header)</h2>
+            <div id="box3" class="box box2 box3">
+                <h1 class="text">Root element</h1>
+                <h2 class="text">(HTML)</h2>
+                <div id="box4" class="box box2 box3 box4">
+                    <h1 class="text">Document</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="info">
+    <h1>DOM</h1>
+    <p>Når en side lastes, vil det bli laget en DOM, som står for Document Object Model. DOM er en W3C (World Wide Web Consortium)
+        standard og er en måte å vise programmering grensesnitt for HTML og XML dokumenter. Med hjelp av DOM har man muligheten
+        til å kunne forandre på koden når siden er lastet ned. Man kan forandre på koden til allerede eksisterende elementer eller
+        man kan lage seg helt nye elementer som man også kan forandre videre. Innenfor HTML koding kan man for eksempel skape
+        tekster på nettsiden, eller med CSS kan man forandre på designet, som farger eller størrelser. Dette kan gjøres ved hjelp
+        av JavaScript.</p>
+    <p>Hvert element kan også påvirke elementer som er under seg, altså en «foreldre»-element har muligheten til å kunne forandre
+        på sine «barne»-elementer. Det er en modell som ofte blir brukt i denne sammenhengen og det er en modell som fungerer som
+        et tre. Treet har stammen sin som er dokumentet og hoved elementet, ofte da HTML, og så greiner treet utover til andre
+        mindre elementer. Ytterst så har man «bladene» som da ofte er tekst eller bilder som står mellom taggene. På en enkel og
+        grei måte forklart så er stammen HTML dokumentet, greinen er de forskjellige taggene som blir brukt i HTML dokumentet og
+        til slutt bladene som er det som befinner seg mellom taggene.</p>
+    <p>På eksempelet ved siden av her har jeg tatt utgangspunkt i en grein i modellen. Her prøver jeg å vise at når noen
+        forandringer skjer høyere oppe ved hoved elementene så vil det påvirke elementene under seg. Her er det en farge
+        forandring som jeg har brukt onmouseover og onmouseleave for å forandre fargene.</p>
+</div>
+</body>
+</html>

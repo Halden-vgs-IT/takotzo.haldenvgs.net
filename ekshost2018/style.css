@@ -1,0 +1,191 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: Verdana, sans-serif;
+}
+img {
+    vertical-align: middle;
+}
+* {
+    box-sizing: border-box
+}
+/*classes*/
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 2em;
+
+}
+.button {
+    border-radius: 20px;
+    border: solid black 1px;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none black;
+    cursor: pointer;
+    padding: .3em 1em;
+    width: 50vh;
+}
+
+.video {
+    position: absolute;
+
+}
+.liste-posisjon {
+    position: absolute;
+    left: 52%;
+    top: 250px;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    left: 47%;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot-posisjon {
+    width: 50%;
+    text-align: center;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.hytte-bilde {
+    width: 50%;
+}
+.leihyttebox {
+    position: relative;
+    width: 90%;
+    height: 15%;
+    padding: 1%;
+    border-radius: 20px;
+    background-color: #bbbbbb;
+}
+
+/*ID*/
+#paddingalder {
+    padding: 2em 4em;
+}
+#alder {
+    font-style: italic;
+}
+#cover {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 60%;
+    height: 50%;
+    background-color: lightgray;
+    display: none;
+}
+#granbo {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-radius: 100px;
+    opacity: 0;
+}
+#granbo:hover {
+    opacity: 1;
+}
+#granstua {
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    border-radius: 100px;
+    opacity: 0;
+}
+#granstua:hover {
+    opacity: 1;
+}
+#granhaug {
+    position: absolute;
+    top: 29%;
+    left: 53%;
+    border-radius: 100px;
+    opacity: 0;
+}
+#granhaug:hover {
+    opacity: 1;
+}
+#grantoppen {
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    border-radius: 100px;
+    opacity: 0;
+}
+#grantoppen:hover {
+    opacity: 1;
+}
+#bo {
+    display: inline;
+}
+#haug {
+    display: none;
+}
+#stua {
+    display: none;
+}
+#toppen {
+    display: none;
+}
+#leiBoVinter {
+    display: none;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

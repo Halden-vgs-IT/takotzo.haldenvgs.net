@@ -1,0 +1,69 @@
+body {
+    background-color: #F7FFC0;
+}
+main {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 5% 85%;
+    grid-template-areas:
+            'header header'
+            'nav nav'
+            'article aside';
+    grid-row-gap: 5px;
+    width: 95%;
+    height: 95%;
+    top: 1.5%;
+    left: 1.5%;
+    font-family: Calibri;
+}
+header{
+    grid-area: header;
+    font-family: Calibri, serif;
+    font-size: 18px;
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+article {
+    grid-area: article;
+}
+aside {
+    grid-area: aside;
+}
+.knapp {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    border-style: double;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    height:2vw;
+    width: 20vw;
+    padding: 0.1vw;
+    background-color: #9BE391;
+}
+.knapp:hover {
+    background-color: #91E3B7;
+}
+.logo {
+    width: 30px;
+    height: auto;
+}
+video {
+    position: relative;
+    width: 640px;
+    height: auto;
+    top: 100px;
+    left: 30px;
+}
+.text {
+    position: relative;
+    left: 10px;
+    top: 50px;
+    font-size: 18px;
+}

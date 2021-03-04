@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halden datahjelp UB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 5% 45% 40%;
+        grid-template-areas:
+                'header'
+                'nav'
+                'article'
+                'aside';
+    }
+</style>
+<body>
+<main>
+    <header>
+        <h1>Halden Datahjelp UB</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="knapp">Hjem</a>
+        <a href="tilbud.html" class="knapp">Hva tilbyr vi</a>
+        <a href="kontakt.html" class="knapp">Kontakt oss</a>
+    </nav>
+    <article class="text">
+        <h2> Priser/tilbud:</h2>
+        <p>Fikser vi problemet over telefon eller mail: 50 kroner</p>
+        <p>Hvis vi må reise hjem til deg så avhenger prisen av hvor lenge tjenesten varer i timer: 100 - 200 kroner i timen
+            (avhengig av hvor vanskelig/komplisert tjenesten blir)
+        </p>
+    </article>
+    <aside>
+        <p>Her er et intervju med en av våre mange fornøyde kunder</p>
+        <audio controls>
+            <source src="filer/intervju.mp3" type="audio/mpeg">
+            lydfil ikke tilgjengelig
+        </audio>
+    </aside>
+</main>
+</body>
+</html>

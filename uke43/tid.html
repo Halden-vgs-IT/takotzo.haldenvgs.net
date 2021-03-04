@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script>
+        window.onload = oppstart;
+
+        function oppstart() {
+            document.getElementById("leggtil").onclick = leggtil;
+        }
+
+        function leggtil () {
+            var tid = new Date();
+            var nyttElement = document.createElement("li");
+
+            nyttElement.innerHTML = tid.getHours() + ":" + tid.getMinutes() + ":" + tid.getSeconds() ;
+
+            document.getElementById("tider").appendChild(nyttElement);
+        }
+
+    </script>
+</head>
+<body>
+<h1>Rundetider</h1>
+<p id="leggtil">Legg til ny tid</p>
+<h3>Tider:</h3>
+<ol id="tider">
+</ol>
+
+</body>
+</html>

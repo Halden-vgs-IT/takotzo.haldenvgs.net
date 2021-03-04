@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vis melding</title>
+    <script>
+        window.onload = oppstart;
+
+        function oppstart() {
+            document.getElementById("melding").style.visibility = 'hidden';
+            document.getElementById("chkVisMelding").onchange = visMelding;
+        }
+
+        function visMelding() {
+            if (document.getElementById("chkVisMelding").checked === true) {
+                document.getElementById("melding").style.visibility = 'visible';
+            }
+            else {
+                document.getElementById("melding").style.visibility = 'hidden';
+            }
+        }
+    </script>
+</head>
+<body>
+    <p id="melding">Dette er en test</p>
+    <p><input type="checkbox" id="chkVisMelding" />Vis Melding</p>
+</body>
+</html>

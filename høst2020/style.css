@@ -1,0 +1,99 @@
+.font {
+    font-family: "oswald", sans-serif;
+}
+main {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 15% 10% 75%;
+    grid-template-areas:
+            'header header'
+            'nav nav'
+            'article aside';
+    grid-row-gap: 5px;
+    width: 95%;
+    height: 95%;
+    top: 1.5%;
+    left: 1.5%;
+}
+header {
+    grid-area: header;
+}
+h1 {
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article {
+    grid-area: article;
+}
+aside {
+    grid-area: aside;
+}
+.knapp {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    border-style: double;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    height:2vw;
+    width: 20vw;
+    padding: 0.1vw;
+    background-color: #50FAA6;
+}
+.knapp:hover {
+    background-color: #47DEBE;
+}
+#svg {
+    position: absolute;
+    opacity: 1;
+    left:10px;
+}
+#gif {
+    width: 60vw;
+    height: auto;
+    padding: 10px;
+}
+.calibri {
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+}
+.table {
+    position: relative;
+    border: solid black;
+    border-collapse: collapse;
+    width: 80vw;
+    height: 15vw;
+}
+th {
+    font-family: strong;
+    font-size: 3vh;
+    border: solid 0.3vh;
+}
+td {
+    font-family: strong;
+    font-size: 3vh;
+    border: solid 0.3vh;
+}
+.logo {
+    width: 30px;
+    height: auto;
+}
+.morkf {
+    background-color: #47ACDE;
+}
+.lysf {
+    background-color: #5AEAF5;
+}
+.hjemtekst {
+    font-size: 18px;
+}

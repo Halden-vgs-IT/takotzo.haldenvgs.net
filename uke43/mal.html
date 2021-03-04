@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mal</title>
+    <script>
+        window.onload = oppstart;
+        function oppstart () {
+            alert("Hola el mundo");
+            document.getElementById("klikketekst").onmouseleave = trykket;
+            document.getElementById("svar").onclick = visSvar;
+        }
+        function trykket (evt) {
+            alert("NANI?");
+        }
+        function visSvar () {
+            document.getElementById("svar").innerHTML = "Svaret er 42";
+        }
+
+
+    </script>
+</head>
+<body>
+<p id="klikketekst">Klikk her</p>
+
+<p>Hva er svaret på livet, universet og alt mulig?</p>
+<p id="svar">Klikk her for svar</p>
+</body>
+</html>

@@ -1,0 +1,80 @@
+:root {
+    --bc: #ffffff;
+    --primary: #ffffff;
+    --white: #ffffff;
+    --black: #000000;
+    /* Colors */
+    --red: #da2c4d;
+    --orange: #fd7e14;
+    --yellow: #f8ab37;
+    --yellow-bright: #ffc107;
+    --light-green: #24e33a;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    /* Gray Colors */
+    --bc-gray: #ede8e4;
+    --gray: #9e9d9b;
+    --gray-dark: #1c1a19;
+    /* Gradients */
+    /* Sizes */
+    --heading: 3.4rem;
+    --heading-large: 7.5rem;
+    --heading-medium: 2rem;
+    --paragraph: 1.1rem;
+    --button-large: 1.6rem;
+    --button: 1.22rem;
+    /* Fonts */
+    --font-main: "Asap";
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    width: 100%;
+    font-family: var(--font-main);
+    background-color: var(--bc);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+/* Classes */
+
+/* @media rules */
+@media only screen and (max-width: 1660px) {
+    :root {
+        /* Sizes */
+        --heading: 3rem;
+    }
+}
+@media only screen and (max-width: 1456px) {
+    :root {
+        /* Sizes */
+        --heading: 2.8rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        /* Sizes */
+        --heading: 2.4rem;
+    }
+}
+@media only screen and (max-width: 756px) {
+    :root {
+        /* Sizes */
+        --heading: 2.2rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+
+}
+@media only screen and (max-width: 496px) {
+    :root {
+        /* Sizes */
+        --heading: 1.75rem;
+    }
+}

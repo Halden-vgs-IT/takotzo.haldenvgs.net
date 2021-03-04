@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>farge</title>
+    <script>
+        window.onload = oppstart;
+
+        function oppstart() {
+            document.getElementById("groenn").onclick = visGroenn;
+            document.getElementById("blaa").onclick = visBlaa;
+            document.getElementById("roed").onclick = visRoed;
+        }
+        function visGroenn() {
+            document.getElementById("melding").className = "groenn";
+        }
+        function visBlaa() {
+            document.getElementById("melding").className = "blaa";
+        }
+        function visRoed() {
+            document.getElementById("melding").className = "roed";
+        }
+    </script>
+    <style>
+        .groenn {color:green}
+        .blaa {color: blue}
+        .roed {color: red}
+    </style>
+</head>
+<body>
+    <h1 id="melding">Hei verden</h1>
+    <p>Klikk på ønsket farge</p>
+    <ul>
+        <li id="groenn" class="groenn">Grønn</li>
+        <li id="blaa" class="blaa">Blå</li>
+        <li id="roed" class="roed">Rød</li>
+    </ul>
+</body>
+</html>
